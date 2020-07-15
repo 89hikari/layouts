@@ -56,6 +56,15 @@ body{
     padding: 5px 20px 4px 50px;
     font-size: 16px;
     display: block;
+    position: relative;
+}
+
+.header__btn::before{
+    font-family: 'icomoon';
+    content: "\f0b1";
+    position: absolute;
+    left: 22px;
+    color: #1b1b1b;
 }
 
 .header__phone,
@@ -63,11 +72,28 @@ body{
     color: #cbcacb;
     letter-spacing: 0.25px;
     line-height: 45px;
+    position: relative;
 }
 
 .header__phone{
     padding-left: 20px;
     padding-right: 30px;
+}
+
+.header__phone::before{
+    font-family: 'icomoon';
+    content: "\f095";
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
+.header__email:before{
+    font-family: 'icomoon';
+    content: "\f003";
+    position: absolute;
+    left: 0;
+    color: #ffc222;
 }
 
 .header__content-inner{
@@ -102,4 +128,77 @@ body{
 
 .menu li + li{
     padding-left: 10px;
+}
+
+#modal{
+    display: none;
+}
+
+.slider{
+    background-image: url(../img/slider-fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.slider-item{
+    text-align: center;
+    padding-top: 110px;
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+.slider-title{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
+
+.slider-text{
+    line-height: 24px;
+    font-size: 18px;
+    color: #d3d2d2;
+    margin-bottom: 50px;
+}
+
+.slider-btn{
+
+}
+
+.default-btn{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 30px 8px 24px;
+    border: 1px solid #ffc222;
+    border-right-width: 20px;
+    position: relative;
+}
+
+.default-btn::after{
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+
+}
+
+.slider{
+    position: relative;
+}
+
+.slick-btn{
+    position: absolute;
+    text-outline: 
 }
